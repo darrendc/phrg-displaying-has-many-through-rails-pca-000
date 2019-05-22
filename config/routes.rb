@@ -35,6 +35,46 @@ Rails.application.routes.draw do
   #     resource :seller
   #   end
 
+#   users.map do |user|
+#     user.last_name.capitalize
+#   end
+
+#   users.map { |user| user.last_name.capitalize }
+
+#   users.map(&:process)
+
+
+# user.name
+
+# arry_of_methods = [:last_name, :first_name, :middle_inital, :ssn, :mother]
+
+# def poop(user, arry_of_methods)
+#   arry_of_methods.each do |method|
+#     user.send(method)
+#   end
+# end
+
+# user.send(:name)
+
+#   artist = nil
+
+#   nil.name => UndefinedMethod :name for NilClass
+
+#   popcorn&.name  => nil
+
+#   artist.try(:name)
+
+
+#   artist&.song&.genre
+
+#   if artist.song && artist.song.genre && artist.song.genre.topic
+#     artist.song.genre.topic.name
+#   end
+
+#   if artist&.song&.genre&.topic
+#     artist.song.genre.topic.name
+#   end
+
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
